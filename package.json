@@ -1,0 +1,19 @@
+{
+  "name": "lokaprof",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "browser-sync": "browser-sync start --server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amh50/lokaprof.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amh50/lokaprof/issues"
+  },
+  "homepage": "https://github.com/amh50/lokaprof#readme"
+}
