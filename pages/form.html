@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="is">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lokapróf</title>
+  <link rel="shortcut icon" href="img/comp.ico" type="image/x-icon">
+  <link rel="icon" href="img/comp.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <h1>Æfing fyrir lokapróf</h1>
+    <h2>Valmynd</h2>
+    <a href="#subject">Beint í efni</a>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Alls konar</a></li>
+        <li><a href="tafla.html">Tafla</a></li>
+        <li><strong>Form</strong></li>
+      </ul>
+    </nav>
+
+  </header>
+  <main>
+    <a id="subject"></a>
+    <form action="/skraning" method="post">
+      <fieldset>
+        <legend>Persónuupplýsingar</legend>
+        <div>
+          <label for="select">Select:</label>
+          <select id="select">
+            <option>101 Reykjavík</option>
+            <option>102 Reykjavík</option>
+            <option>103 Reykjavík</option>
+            <option>104 Reykjavík</option>
+          </select>
+        </div>
+        <div>
+          <label for="text">Texti:</label>
+          <input id="text" type="text" placeholder="Helgi Helgason" required>
+        </div>
+        <div>
+          <label for="phone">Símanúmer með Pattern:</label>
+          <input id="phone" type="text" placeholder="000-0000" required pattern= "[0-9]{3}-[0-9]{4}">
+        </div>
+        <div>
+          <label for="email">Símanúmer með Pattern:</label>
+          <input id="email" type="text" placeholder="example@email.com" required pattern= "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        </div>
+        <div>
+          <label>Radio:</label>
+          <input id="a" name="radio" type="radio">
+          <input id="b" name="radio" type="radio">
+          <input id="c" name="radio" type="radio">
+        </div>
+        <div>
+          <label>Checkbox:</label>
+          <input id="d" type="checkbox">
+          <input id="e" type="checkbox">
+          <input id="f" type="checkbox">
+        </div>
+        <div>
+          <label>Range:</label>
+          <input id="range" type="range">
+        </div>
+        <button type="reset">Byrja upp á nýtt</button>
+        <button>Senda</button>
+      </fieldset>
+    </form>
+  </main>
+  <footer>
+
+  </footer>
+
+</body>
+
+</html>
