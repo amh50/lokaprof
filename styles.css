@@ -1,0 +1,28 @@
+html { 
+  font-size: 20px; 
+}
+
+em { 
+  color: #f00; 
+}
+
+div > em { 
+  color: #00f; 
+}
+
+main li + li {
+  color:green;
+}
+
+p ~ span {
+  color:purple;
+}
+
+#hover:hover {
+background-color: yellow;
+}
+
+#active:active {
+  background-color: yellow;
+}
+

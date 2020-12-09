@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="is">
+
+<head>
+  <meta charset="utf-8">
+  <title>Selectors | CSS</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="img/comp.ico" type="image/x-icon">
+  <link rel="icon" href="img/comp.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <h1>Æfing fyrir lokapróf 2</h1>
+    <h2>Valmynd</h2>
+    <a href="#subject">Beint í efni</a>
+    <nav>
+      <ul>
+        <li><strong>Selectors</strong></li>
+        <li><a href="pages/pseudo.html">Gervi-element (pseudo-element)</a></li>
+      </ul>
+    </nav>
+    <a href=index.html>Fara í HTML</a>
+  </header>
+  <main>
+    <article>
+      <h2>div &gt; em</h2>
+      <h3>Öll em sem eru börn div (em er áhersla)</h3>
+      <div>
+        Ekki em en <em> þetta er em </em>
+      </div>
+      <div>
+        Ekki em en <em>þetta er em og <em>þetta er em sem er barn em</em></em>
+      </div>
+    </article>
+    <article>
+      <h2>li + li</h2>
+      <h3>Öll li með li sem fyrra systkini er grænt</h3>
+      <ul>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+      </ul>
+    </article>
+    <article>
+      <h2>
+        p ~ span
+      </h2>
+      <h3>Öll span sem koma á eftir p eru fjólublá</h3>
+      <span>þetta span er beint á undan p, hvorki fyrir utan né innan p</span>
+      <div>
+        <p>
+          <span>þetta span er innan p en verður ekki fjólublátt</span>
+        </p>
+        <span>þetta span kemur beint á eftir p, hvorki fyrir utan né innan p</span>
+      </div>
+      <span>þetta span er fyrir utan p</span>
+      
+    </article>
+    <article>
+      <h2>a:hover</h2>
+      <h3>ef við hoverum yfir textann fyrir neðan verður bakgrunnurin gulur</h3>
+      <span id="hover">blabla</span>
+    </article>
+    <article>
+      <h2>a:active</h2>
+      <h3>á meðan við ýtum á textann fyrir neðan verður bakgrunnurin gulur</h3>
+      <span id="active">blabla</span>
+    </article>
+  </main>
+
+</body>
+
+</html>
