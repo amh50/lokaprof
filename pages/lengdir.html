@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="is">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lengdir | CSS</title>
+  <link rel="shortcut icon" href="../img/comp.ico" type="image/x-icon">
+  <link rel="icon" href="../img/comp.ico" type="image/x-icon">
+  <style>
+    html {
+      font-size: 20px;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    #h2 {
+      color: teal;
+
+    }
+
+    #px div {
+      font-size: 30px;
+    }
+
+    #px div p {
+      font-size: 2em;
+    }
+
+    #px div p em {
+      font-size: 10px;
+    }
+
+    #px div p strong {
+      font-size: 1.5em;
+    }
+
+    #skjapr div {
+      width: 100vw;
+      height: 100vh;
+
+      background-color: #999;
+    }
+
+    #skjapr h3 {
+      margin: 0;
+      font-size: 10vmin; /*Textin minnkar miðað við hvort skjárinn sé minni á breidd eða hæð*/
+    }
+
+    #skjapr p {
+      font-size: 8vw;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Æfing fyrir lokapróf 2</h1>
+    <h2>Valmynd</h2>
+    <a href="#subject">Beint í efni</a>
+    <nav>
+      <ul>
+        <li><a href="../index2.html">Selectors</a></li>
+        <li><a href="pseudo.html">Pseudo-element</a></li>
+        <li><strong>Lengdir</strong></li>
+
+      </ul>
+    </nav>
+    <a href=../index.html>Fara í HTML</a>
+  </header>
+  <main>
+    <article id="px">
+      <h2 class="h2">px, em og rem</h2>
+      <div>
+        Þessi texti er núna 30px fyrst við skrifuðum font-size:30px
+        <p>
+          Þessi texti í p er 2em = 30px*2=60px fyrst div sem er foreldri p. <em>Þessi er 10px fyrst
+            við skrifuðumfont-size:10px. </em> <strong>Þessi er 1.5em = 30px*2*1.5=90px því hann er
+            barn p sem er 60px</strong>
+        </p>
+      </div>
+      <p>Þessi er 4rem = 30px*4 = 120px</p>
+    </article>
+    <article id="skjapr">
+      <h2>Skjá-prósentu einingar</h2>
+      <div>
+        <h3>Lorem ipsum dolor sit amet</h3> 
+        <p>
+          Consectetur adipiscing elit. Nam eleifend nunc non suscipit finibus. Proin non tincidunt
+          nisl. Quisque lacus nibh, sodales in felis aliquet, iaculis pellentesque sem. Maecenas 
+          elit orci, dictum at congue non, elementumsit amet magna. Aliquam erat volutpat. Aenean 
+          magna erat, faucibus eu hendrerit sed, pharetra sed mauris. Fusceet dui urna. Vivamus 
+          sollicitudin mollis rutrum. Orci varius natoque penatibus et magnis dis parturient montes,
+          nascetur ridiculus mus. Vivamus hendrerit volutpat erat a maximus. Sed pharetra dapibus 
+          sapien ac bibendum.
+        </p>
+      </div>
+    </article>
+  </main>
+</body>
+
+</html>
