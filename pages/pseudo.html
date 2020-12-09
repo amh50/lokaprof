@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="is">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pseudo-elements | CSS</title>
+  <link rel="shortcut icon" href="../img/comp.ico" type="image/x-icon">
+  <link rel="icon" href="../img/comp.ico" type="image/x-icon">
+  <style>
+    html {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    #first::first-letter {
+      font-size: 2em;
+    }
+
+    #firstLine::first-line {
+      font-size: 2em;
+    }
+
+    #after::after {
+      content: " Þessi texti er ekki í p";
+    }
+
+    #before::before {
+      content: "Þessi texti er skrifaður með before en ekki þessi: ";
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Æfing fyrir lokapróf 2</h1>
+    <h2>Valmynd</h2>
+    <a href="#subject">Beint í efni</a>
+    <nav>
+      <ul>
+        <li><a href="../index2.html">Selectors</a></li>
+        <li><strong>Pseudo-elements</strong></li>
+        <li><a href="lengdir.html">Lengdir</a></li>
+      </ul>
+    </nav>
+    <a href=../index.html>Fara í HTML</a>
+  </header>
+  <main>
+    <p id="first">Fyrsti stafurinn hér er skrifaður með ::first-leter</p>
+    <p id="firstLine">
+      Fyrsta línan hér er skrifuð með ::first-line.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    </p>
+    <p id="after">Textinn á eftir ":" er ekki í p heldur er það skrifað með ::after: </p>
+    <p id="before">Þessi texti er í p </p>
+  </main>
+
+</body>
+
+</html>
